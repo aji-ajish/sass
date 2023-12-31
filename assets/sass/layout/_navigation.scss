@@ -1,0 +1,31 @@
+// navigation
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+  
+    &__title {
+      font-size: 25px;
+      font-weight: 600;
+    }
+  
+    &__menus {
+      list-style: none;
+      display: flex;
+    }
+  
+    &__link {
+      margin-left: 20px;
+  
+      &.active {
+        padding: 3px 8px;
+        background: red;
+        border-radius: 5px;
+  
+        a{
+          color:white;
+          font-weight: 500;
+        }
+      }
+    }
+  }
