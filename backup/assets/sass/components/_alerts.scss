@@ -1,0 +1,20 @@
+.alert {
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-bottom: 3px;
+
+  &-warning {
+    background: rgba(252, 220, 39, 0.77);
+    border: 1px solid rgb(250, 58, 44);
+  }
+  &-success {
+    @extend .alert;
+    background: rgba(57, 252, 39, 0.76);
+    border: 1px solid rgb(247, 11, 255);
+  }
+  &-danger {
+    @extend .alert;
+    background: rgba(252, 39, 39, 0.76);
+    border: 1px solid rgb(27, 11, 255);
+  }
+}

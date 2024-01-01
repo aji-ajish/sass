@@ -1,0 +1,32 @@
+@use "../abstracts/variable/index" as *;
+@use "../abstracts/functions" as *;
+@use "../abstracts/_mixins.scss";
+
+.card {
+  background: white;
+  padding: 30px;
+  margin: 40px;
+  border-radius: 10px;
+
+  &__title {
+    color: blue;
+    font-family: $app-font;
+    font-size: 23px;
+  }
+  &__para {
+    font-family: $app-font;
+    font-weight: 500;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 22px;
+    letter-spacing: 2px;
+    text-indent: 25px;
+    color: rgb(63, 63, 63);
+  }
+
+  &__btn {
+    margin-top: 10px;
+    background: brand-colors('accent');
+    @include mixins.btn;
+  }
+}

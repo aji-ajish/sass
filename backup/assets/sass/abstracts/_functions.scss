@@ -1,0 +1,5 @@
+@use "../abstracts/variable/index" as *;
+
+@function brand-colors($bg-color:'success'){
+   @return map-get( $theme-colors, $bg-color )
+}

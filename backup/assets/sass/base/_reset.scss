@@ -1,0 +1,17 @@
+
+@use "../abstracts/variable/index" as *;
+@use "../abstracts/functions" as *;
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body,
+html {
+  background: brand-colors('primary');
+}
+a {
+  text-decoration: none;
+  color: rgb(187, 187, 187);
+}
