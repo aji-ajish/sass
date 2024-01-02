@@ -1,0 +1,19 @@
+@use "../abstract/function" as fun;
+
+.btn {
+  padding: 0.8rem 1.6rem;
+  border-radius: 6px;
+  font-size: 0.8rem !important;
+  font-weight: 600 !important;
+  display: inline-block;
+
+  &-primary {
+    background: fun.theme-color();
+    color:#fff;
+
+    &:hover{
+        background: fun.theme-color("primary-hover");
+
+    }
+  }
+}

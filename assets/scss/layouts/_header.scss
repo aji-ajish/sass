@@ -1,0 +1,35 @@
+@use "../abstract/function" as fun;
+
+.header {
+  padding: 1rem 20rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+
+  h2{
+    color:#4d4d4d;;
+  }
+
+  &--menu {
+    display: flex;
+    list-style: none;
+    text-transform: uppercase;
+    align-items: center;
+
+    &__item a {
+      margin-right: 5rem;
+      font-size: 14px;
+      font-weight: 600;
+      color: #242424;
+      transition: 300ms;
+
+      &:hover {
+        color: fun.theme-color("primary-hover");
+      }
+      &.active {
+        color: fun.theme-color("primary-hover");
+      }
+    }
+  }
+}
