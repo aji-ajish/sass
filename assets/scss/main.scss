@@ -7,10 +7,16 @@
 
 // utilities
 @import "./utility/animation";
+@import "./utility/spacing";
 
 // components
 @import "./components/buttons";
+@import "./components/badges";
 //layouts
-@import "./layouts/header"
+@import "./layouts/header";
+@import "./layouts/background_elements";
+
+// pages
+@import "./pages/home";
 
 

@@ -1,0 +1,115 @@
+.background-shapes {
+  .box {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: transparent;
+    border-radius: 0.35rem;
+    z-index: -1;
+    transform: rotate(360deg);
+    animation: box-shape linear 5s infinite;
+  }
+  .dot {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    z-index: -1;
+  }
+
+  .icon {
+    position:absolute ;
+    font-size: 18px;
+    transform: scale(1);
+    animation: pulse 2s infinite;
+  }
+  .icon1 {
+    @extend .icon;
+    color: #f51717;
+    top: 20%;
+    right: 50%
+  }
+  .icon2 {
+    @extend .icon;
+    color: #fd3fed;
+    bottom: 20%;
+    left: 45%;
+    animation: box-shape linear 5s infinite;
+
+  }
+  .icon3 {
+    @extend .icon;
+    color: #2617f5;
+    top: 25%;
+    right: 70%
+  }
+  .icon4 {
+    @extend .icon;
+    color: #fd7b3f;
+    top: 50%;
+    right: 10%;
+    animation: box-shape linear 5s infinite;
+  }
+  .icon5 {
+    @extend .icon;
+    color: #3cf517;
+    top: 40%;
+    left: 15%;
+    animation: box-shape linear 5s infinite;
+  }
+
+  .box1 {
+    @extend .box;
+    border: 3px solid #fd3f3f;
+    top: 20%;
+    left: 10%;
+  }
+  .box2 {
+    @extend .box;
+    border: 3px solid #3f43fd;
+    top: 90%;
+    left: 60%;
+  }
+  .box3 {
+    @extend .box;
+    border: 3px solid #fd3fed;
+    top: 30%;
+    left: 90%;
+  }
+  .box4 {
+    @extend .box;
+    border: 3px solid #5ffd3f;
+    top: 70%;
+    left: 15%;
+  }
+  .box5 {
+    @extend .box;
+    border: 3px solid #fd7b3f;
+    top: 40%;
+    left: 48%;
+  }
+  .dot1 {
+    @extend .dot;
+    background: #7717f5;
+    top: 80%;
+    left: 35%;
+  }
+  .dot2 {
+    @extend .dot;
+    background: #3cf517;
+    top: 70%;
+    left: 85%;
+  }
+  .dot3 {
+    @extend .dot;
+    background: #2617f5;
+    top: 25%;
+    left: 39%;
+  }
+  .dot4 {
+    @extend .dot;
+    background: #f51717;
+    top: 20%;
+    left: 68%;
+  }
+}

@@ -1,19 +1,36 @@
 @use "../abstract/function" as fun;
 
 .btn {
-  padding: 0.8rem 1.6rem;
+  padding: 0.7rem 1.6rem;
   border-radius: 6px;
   font-size: 0.8rem !important;
   font-weight: 600 !important;
   display: inline-block;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: 500ms;
+
 
   &-primary {
+    @extend .btn;
     background: fun.theme-color();
-    color:#fff;
+    color: #fff;
 
-    &:hover{
-        background: fun.theme-color("primary-hover");
+    &:hover {
+      background: fun.theme-color("primary-hover");
+    }
+  }
+  &-primary-outline{
+    @extend .btn;
+    background: #fff;
+    border:2px solid fun.theme-color();
+    color: fun.theme-color();
+    transition: 500ms;
 
+    &:hover {
+      background: fun.theme-color("primary-hover");
+      color:#fff
     }
   }
 }

@@ -1,6 +1,9 @@
 .font-ta {
   font-family: $tamil;
 }
+.text-upper{
+  text-transform: uppercase;
+}
 
 .color-anim{
   animation: color-change 8s infinite;
