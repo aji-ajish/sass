@@ -6,6 +6,7 @@
   padding: 8rem 20rem;
   justify-content: center;
   align-items: center;
+  
 
   h2{
     font-size: 3rem;
@@ -15,6 +16,7 @@
   }
   &--content{
     color: #fff;
+    text-transform: capitalize;
   }
   p{
     line-height: 2;

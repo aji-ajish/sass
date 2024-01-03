@@ -10,3 +10,11 @@
   transition:300ms ;
 }
 
+.line{
+  width: 6rem;
+  border-radius: 10px;
+  background: linear-gradient(to right, rgb(255, 32, 136),rgb(31, 35, 255));
+  height: .5rem;
+  margin: 20px auto;
+}
+

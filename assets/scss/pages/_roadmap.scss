@@ -1,0 +1,118 @@
+@use "../abstract/function" as fun;
+
+.roadmap {
+  padding: 8rem 20rem;
+  background: #8080800a;
+
+  &--heading {
+    text-align: center;
+
+    h2{
+        font-size: 2rem;
+    }
+    p{
+        color: gray;
+    }
+
+  }
+
+  &--items {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    text-transform: capitalize;
+  }
+
+  &--item {
+    position: relative;
+    padding: 3rem 1rem;
+    text-align: center;
+    max-width: 350px;
+    cursor: pointer;
+    filter: grayscale(100%);
+    transition: 500ms;
+
+    &:hover &__img::after {
+      animation: rotate-infinite 4000ms linear infinite;
+    }
+    &:hover {
+      filter: grayscale(0);
+    }
+
+    &__img {
+      position: relative;
+      width: 100px;
+      height: 100px;
+      margin: 0 auto 30px;
+
+      img {
+        width: 60px;
+        margin-top: 25px;
+      }
+
+      &::after {
+        position: absolute;
+        border: 5px dotted fun.theme-color();
+        height: 100%;
+        width: 100%;
+        content: "";
+        border-radius: 50%;
+        top: 0;
+        left: -5px;
+      }
+    }
+
+    &__contents {
+      margin-top: 2rem;
+
+      h5 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        
+      }
+
+
+      p {
+        color: gray;
+        line-height: 1.5;
+      }
+    }
+
+    &:not(:last-child)::before {
+      position: absolute;
+      top: 25%;
+      right: -20px;
+      content: "";
+      font-family: "Font Awesome 5 Free";
+      font-weight: 600;
+      width: 70px;
+      height: 70px;
+      color: #020702;
+      font-size: 3rem;
+      line-height: 1;
+      z-index: 1;
+      transition: 500ms;
+    }
+
+    &:hover:not(:last-child)::before {
+      right: -10%;
+      transition: 500ms;
+      color: fun.theme-color();
+    }
+
+    &:hover h5{
+        color:fun.theme-color();
+      transition: 500ms;
+    }
+
+    &:hover:last-child:after {
+      position: absolute;
+      content: "😊 👍";
+      font-weight: 600;
+      top: 25%;
+      right: -25px;
+      font-size: 3rem;
+      transition: 500ms;
+    }
+  }
+}
