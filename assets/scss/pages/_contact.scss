@@ -1,0 +1,27 @@
+@use "../abstract/function" as fun;
+
+.contact {
+  padding: 8rem 20rem;
+  background: rgb(216, 216, 216);
+
+  &-card {
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 3rem;
+    border-radius: 6px;
+
+    &--contents {
+      flex-grow: 1;
+
+      h2 {
+        font-size: 1.2rem;
+      }
+      p {
+        color: gray;
+        text-transform: capitalize;
+      }
+    }
+  }
+}

@@ -948,6 +948,26 @@ a {
   color: #fff;
 }
 
+.form-control {
+  padding: 0.8rem 1.5rem;
+  background-color: rgb(247, 247, 247);
+  border: none;
+  border-radius: 6px;
+  outline: none;
+  width: 100%;
+}
+.form-control:focus {
+  border: 1px solid #3f43fd;
+}
+
+.resize-x {
+  resize: horizontal;
+}
+
+.resize-none {
+  resize: none;
+}
+
 .header {
   padding: 1rem 20rem;
   display: flex;
@@ -1271,6 +1291,29 @@ a {
 .courses-card__body p {
   color: gray;
   line-height: 1.5;
+}
+
+.contact {
+  padding: 8rem 20rem;
+  background: rgb(216, 216, 216);
+}
+.contact-card {
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 3rem;
+  border-radius: 6px;
+}
+.contact-card--contents {
+  flex-grow: 1;
+}
+.contact-card--contents h2 {
+  font-size: 1.2rem;
+}
+.contact-card--contents p {
+  color: gray;
+  text-transform: capitalize;
 }
 
 /*# sourceMappingURL=style.css.map */
