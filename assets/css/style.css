@@ -1078,4 +1078,25 @@ a {
   color: gray;
 }
 
+.about-area {
+  background-color: #3135e8;
+  display: flex;
+  padding: 8rem 20rem;
+  justify-content: center;
+  align-items: center;
+}
+.about-area h2 {
+  font-size: 3rem;
+}
+.about-area--img {
+  width: 32rem;
+}
+.about-area--content {
+  color: #fff;
+}
+.about-area p {
+  line-height: 2;
+  color: #cfcfcf;
+}
+
 /*# sourceMappingURL=style.css.map */

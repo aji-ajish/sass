@@ -1,0 +1,23 @@
+@use "../abstract/function" as fun;
+
+.about-area {
+  background-color: fun.theme-color("primary-hover");
+  display: flex;
+  padding: 8rem 20rem;
+  justify-content: center;
+  align-items: center;
+
+  h2{
+    font-size: 3rem;
+  }
+  &--img{
+    width: 32rem;
+  }
+  &--content{
+    color: #fff;
+  }
+  p{
+    line-height: 2;
+    color: #cfcfcf;
+  }
+}
