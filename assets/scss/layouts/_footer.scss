@@ -1,0 +1,40 @@
+@use "../abstract/function" as fun;
+
+footer {
+  padding: 2rem 0;
+  text-align: center;
+  color: #fff;
+  background-color: fun.theme-color();
+
+  p {
+    color: #e8e8e8;
+  }
+
+  .social-icon > a > i {
+    font-size: 1.5rem;
+    padding: 0 10px;
+    color: rgb(224, 224, 224);
+    transition: 300ms;
+  }
+  .social-icon a:nth-child(1) i:hover {
+    transition: 300ms;
+    color: rgb(35, 255, 53);
+  }
+  .social-icon a:nth-child(2) i:hover {
+    transition: 300ms;
+    color: rgb(75, 75, 75);
+  }
+  .social-icon a:nth-child(3) i:hover {
+    transition: 300ms;
+    color: rgb(193, 35, 255);
+  }
+  .social-icon a:nth-child(4) i:hover {
+    transition: 300ms;
+    color: rgb(255, 35, 53) ;
+  }
+  .legal p{
+    font-size: .9rem;
+    color: #fff ;
+
+  }
+}
