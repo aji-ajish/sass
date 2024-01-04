@@ -1001,6 +1001,14 @@ a {
     padding: 1rem 4rem;
   }
 }
+@media only screen and (min-width: 1200px) {
+  .header {
+    padding: 1rem 15rem;
+  }
+  .header h2 {
+    font-size: 1.5rem;
+  }
+}
 .header h2 span {
   color: #4d4d4d;
 }
@@ -1072,6 +1080,11 @@ a {
 @media only screen and (min-width: 992px) {
   .header--menu__item a {
     margin-right: 3rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .header--menu__item a {
+    margin-right: 2rem;
   }
 }
 .header--menu__item a:hover {
@@ -1362,8 +1375,18 @@ footer .legal p {
     padding: 8rem 6rem;
   }
 }
+@media only screen and (min-width: 1200px) {
+  .hero-area {
+    padding: 8rem 15rem;
+  }
+}
 .hero-area img {
   width: 25rem;
+}
+@media only screen and (min-width: 1200px) {
+  .hero-area .img-responsive {
+    max-width: 140%;
+  }
 }
 .hero-area--contents {
   max-width: 34rem;
@@ -1371,6 +1394,11 @@ footer .legal p {
 @media only screen and (min-width: 992px) {
   .hero-area--contents {
     max-width: 28rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .hero-area--contents {
+    padding-right: 1rem;
   }
 }
 .hero-area--title {
@@ -1401,6 +1429,14 @@ footer .legal p {
     font-size: 1.9rem;
   }
 }
+@media only screen and (min-width: 1200px) {
+  .hero-area--title {
+    font-size: 2.5rem;
+  }
+  .hero-area--title span {
+    font-size: 1.9rem;
+  }
+}
 .hero-area--desc {
   text-transform: capitalize;
   margin-top: 2rem;
@@ -1416,6 +1452,11 @@ footer .legal p {
 @media only screen and (min-width: 576px) {
   .hero-area--desc {
     font-size: 0.9rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .hero-area--desc {
+    font-size: 1rem;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -1711,6 +1752,11 @@ footer .legal p {
     padding: 8rem 4rem;
   }
 }
+@media only screen and (min-width: 992px) {
+  .courses {
+    padding: 8rem 10rem;
+  }
+}
 .courses--heading {
   text-transform: capitalize;
   text-align: center;
@@ -1776,6 +1822,11 @@ footer .legal p {
     max-width: 275px;
   }
 }
+@media only screen and (min-width: 1200px) {
+  .courses-card {
+    max-width: 300px;
+  }
+}
 .courses-card:hover {
   transition: 500ms;
   transform: scale(1.009);
@@ -1787,6 +1838,11 @@ footer .legal p {
 @media only screen and (min-width: 992px) {
   .courses-card img {
     max-width: 275px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .courses-card img {
+    max-width: 300px;
   }
 }
 .courses-card__body {
@@ -1841,6 +1897,11 @@ footer .legal p {
 @media only screen and (min-width: 992px) {
   .contact {
     padding: 8rem 6rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .contact {
+    padding: 8rem 10rem;
   }
 }
 .contact-card {

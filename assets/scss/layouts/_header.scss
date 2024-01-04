@@ -23,6 +23,14 @@
     padding: 1rem 4rem;
   }
 
+  @include mixins.responsive(xlg) {
+    padding: 1rem 15rem;
+
+    h2{
+      font-size: 1.5rem;
+    }
+  }
+
   h2 span {
     color: #4d4d4d;
     @include mixins.responsive(xs) {
@@ -80,6 +88,9 @@
 
       @include mixins.responsive(lg) {
         margin-right: 3rem;
+      }
+      @include mixins.responsive(xlg) {
+        margin-right: 2rem;
       }
 
       &:hover {

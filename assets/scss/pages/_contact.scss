@@ -24,6 +24,9 @@
   @include mixins.responsive(lg) {
     padding: 8rem 6rem;
   }
+  @include mixins.responsive(xlg) {
+    padding: 8rem 10rem;
+  }
 
   &-card {
     background: #fff;

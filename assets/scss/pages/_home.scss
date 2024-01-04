@@ -21,15 +21,28 @@
     padding: 8rem 6rem;
   }
 
-  img {
-    width: 25rem;
+  @include mixins.responsive(xlg) {
+    padding: 8rem 15rem;
   }
 
+  img {
+    width: 25rem;
+
+   
+  }
+  @include mixins.responsive(xlg) {
+    .img-responsive{
+      max-width: 140%;
+    }
+  }
   &--contents {
     max-width: 34rem;
 
     @include mixins.responsive(lg) {
       max-width: 28rem;
+    }
+    @include mixins.responsive(xlg) {
+    padding-right: 1rem;
     }
   }
 
@@ -61,6 +74,14 @@
         font-size: 1.9rem;
       }
     }
+
+    @include mixins.responsive(xlg) {
+      font-size: 2.5rem;
+
+      span {
+        font-size: 1.9rem;
+      }
+    }
   }
   &--desc {
     text-transform: capitalize;
@@ -77,6 +98,11 @@
     }
     @include mixins.responsive(lg) {
       font-size: 1rem;
+    }
+
+    @include mixins.responsive(lg) {
+      font-size: 1rem;
+
     }
   }
 }
