@@ -13,6 +13,10 @@
     padding: 4rem 2rem;
   }
 
+  @include mixins.responsive(lg) {
+    padding: 8rem 4rem;
+  }
+
   &--heading {
     text-align: center;
 
@@ -34,8 +38,14 @@
     @include mixins.responsive(xs) {
       flex-direction: column;
     }
+
     @include mixins.responsive(sm) {
       flex-direction: column;
+    }
+
+    @include mixins.responsive(lg) {
+      flex-direction: row;
+      
     }
   }
 
@@ -48,11 +58,20 @@
     filter: grayscale(100%);
     transition: 500ms;
 
+    @include mixins.responsive(lg) {
+      max-width: 600px;
+    }
+
     &:hover &__img::after {
       animation: rotate-infinite 5000ms linear infinite;
     }
     &:hover {
       filter: grayscale(0);
+    }
+
+    @include mixins.responsive(lg) {
+      flex: 1;
+      
     }
 
     &__img {
@@ -118,6 +137,12 @@
         top: 90%;
         left: 39%;
       }
+      @include mixins.responsive(lg) {
+        content: "";
+        top: 25%;
+        left: auto;
+        right: 0px;
+      }
     }
 
     &:hover:not(:last-child)::before {
@@ -148,6 +173,14 @@
       @include mixins.responsive(sm) {
         top: 90%;
         left: 0;
+      }
+
+      @include mixins.responsive(lg) {
+        top: 25%;
+      right: auto;
+      left: 70%;
+      font-size: 2.5rem;
+      width: 120px;
       }
     }
   }

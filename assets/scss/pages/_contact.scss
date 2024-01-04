@@ -12,9 +12,17 @@
   @include mixins.responsive(sm) {
     padding: 4rem 2rem;
 
-    img{
+    img {
       width: 28rem;
+
+      @include mixins.responsive(lg) {
+        width: 25rem;
+      }
     }
+  }
+
+  @include mixins.responsive(lg) {
+    padding: 8rem 6rem;
   }
 
   &-card {
@@ -37,11 +45,19 @@
       align-items: initial;
     }
 
+    @include mixins.responsive(lg) {
+      flex-direction: row;
+    }
+
     &--contents {
       flex-grow: 1;
 
       h2 {
         font-size: 1.2rem;
+
+        @include mixins.responsive(lg) {
+          font-size: 1.5rem;
+        }
       }
       p {
         color: gray;

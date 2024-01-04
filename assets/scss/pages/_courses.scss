@@ -13,6 +13,10 @@
     padding: 4rem 2rem;
   }
 
+  @include mixins.responsive(lg) {
+    padding: 8rem 4rem;
+  }
+
   &--heading {
     text-transform: capitalize;
     text-align: center;
@@ -48,14 +52,19 @@
   &-cards {
     display: flex;
     justify-content: space-between;
-    
 
     @include mixins.responsive(xs) {
+      align-items: center;
       flex-direction: column;
     }
     @include mixins.responsive(sm) {
       flex-direction: column;
       align-items: center;
+    }
+
+    @include mixins.responsive(lg) {
+      flex-direction: row;
+      align-items: stretch;
     }
   }
 
@@ -66,6 +75,13 @@
     overflow: hidden;
     cursor: pointer;
 
+    @include mixins.responsive(lg) {
+      max-width: 275px;
+
+    }
+
+
+
     &:hover {
       transition: 500ms;
       transform: scale(1.009);
@@ -74,12 +90,16 @@
 
     img {
       width: 380px;
+
+      @include mixins.responsive(lg) {
+        max-width: 275px;
+      }
+
     }
 
     &__body {
-      padding: 2rem;
+      padding: 1.5rem;
       text-align: center;
-      
 
       h4 {
         font-size: 1.5rem;
@@ -87,13 +107,17 @@
         @include mixins.responsive(xs) {
           font-size: 1.3rem;
         }
+
+        @include mixins.responsive(lg) {
+          font-size: 1.2rem;
+        }
       }
       p {
         color: gray;
         line-height: 1.5;
 
         @include mixins.responsive(xs) {
-          font-size: .9rem;
+          font-size: 0.9rem;
         }
       }
     }

@@ -20,6 +20,13 @@
     margin-top: 0;
   }
 
+  @include mixins.responsive(lg) {
+    flex-direction: row;
+    padding: 8rem 6rem;
+    align-items: center;
+    margin-top: 0;
+  }
+
   h2 {
     font-size: 3rem;
 
@@ -37,6 +44,11 @@
 
     @include mixins.responsive(sm) {
       width: 25rem;
+    }
+
+    @include mixins.responsive(lg) {
+      width: 100rem;
+      padding-right:  3rem;
     }
   }
 

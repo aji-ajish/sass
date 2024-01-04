@@ -36,9 +36,10 @@
     right: 50%;
 
     @include mixins.responsive(sm) {
-      top: 23%;
+      top: 18%;
     right: 50%;
     }
+    
   }
   .icon2 {
     @extend .icon;
@@ -52,6 +53,10 @@
       left: 35%;
     }
 
+    @include mixins.responsive(lg) {
+      bottom: 68%;
+      left: 45%;
+    }
   }
   .icon3 {
     @extend .icon;
@@ -64,6 +69,11 @@
       right: 80%;
       
     }
+
+    @include mixins.responsive(lg) {
+      top: 15%;
+      right: 80%;
+    }
   }
   .icon4 {
     @extend .icon;
@@ -71,6 +81,11 @@
     top: 50%;
     right: 10%;
     animation: box-shape linear 5s infinite;
+
+    @include mixins.responsive(lg) {
+      top: 45%;
+      right: 5%;
+    }
   }
   .icon5 {
     @extend .icon;
@@ -83,6 +98,11 @@
       top: 35%;
       left: 75%;
     }
+
+    @include mixins.responsive(lg) {
+      top: 15%;
+      left: 80%;
+    }
     
   }
 
@@ -94,6 +114,7 @@
 
     @include mixins.responsive(sm) {
       left: 5%;
+      top:18%
     }
   }
   .box2 {
@@ -101,6 +122,10 @@
     border: 3px solid #3f43fd;
     top: 90%;
     left: 60%;
+
+    @include mixins.responsive(lg) {
+      top: 20%;
+    }
   }
   .box3 {
     @extend .box;
@@ -113,6 +138,10 @@
     border: 3px solid #5ffd3f;
     top: 70%;
     left: 15%;
+
+    @include mixins.responsive(lg) {
+      top: 60%;
+    }
   }
   .box5 {
     @extend .box;
@@ -124,24 +153,42 @@
       top: 45%;
       left: 50%
     }
+
+    @include mixins.responsive(lg) {
+      top: 50%;
+    }
   }
   .dot1 {
     @extend .dot;
     background: #7717f5;
     top: 80%;
     left: 35%;
+
+    @include mixins.responsive(lg) {
+      top: 60%;
+    }
   }
   .dot2 {
     @extend .dot;
     background: #3cf517;
     top: 70%;
     left: 85%;
+
+    @include mixins.responsive(lg) {
+      top: 60%;
+    }
   }
   .dot3 {
     @extend .dot;
     background: #2617f5;
     top: 25%;
     left: 39%;
+    @include mixins.responsive(sm) {
+      top: 28%;
+    }
+    @include mixins.responsive(lg) {
+      top: 18%;
+    }
   }
   .dot4 {
     @extend .dot;
@@ -152,6 +199,11 @@
     @include mixins.responsive(sm) {
       top: 50%;
       left: 10%;
+    }
+
+    @include mixins.responsive(lg) {
+      top: 40%;
+      left: 5%;
     }
   }
 }

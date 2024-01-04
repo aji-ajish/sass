@@ -991,6 +991,16 @@ a {
     padding: 1rem 2rem;
   }
 }
+@media only screen and (min-width: 768px) {
+  .header {
+    padding: 1rem 2rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .header {
+    padding: 1rem 4rem;
+  }
+}
 .header h2 span {
   color: #4d4d4d;
 }
@@ -1014,6 +1024,18 @@ a {
     display: block;
   }
 }
+@media only screen and (min-width: 768px) {
+  .header .nav-toggler {
+    font-size: 1.4rem;
+    display: block;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .header .nav-toggler {
+    font-size: 1.4rem;
+    display: none;
+  }
+}
 .header--menu {
   display: flex;
   list-style: none;
@@ -1030,12 +1052,27 @@ a {
     display: none;
   }
 }
+@media only screen and (min-width: 768px) {
+  .header--menu {
+    display: none;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .header--menu {
+    display: flex;
+  }
+}
 .header--menu__item a {
   margin-right: 5rem;
   font-size: 14px;
   font-weight: 600;
   color: #242424;
   transition: 300ms;
+}
+@media only screen and (min-width: 992px) {
+  .header--menu__item a {
+    margin-right: 3rem;
+  }
 }
 .header--menu__item a:hover {
   color: #3135e8;
@@ -1079,7 +1116,7 @@ a {
 }
 @media only screen and (min-width: 576px) {
   .background-shapes .icon1 {
-    top: 23%;
+    top: 18%;
     right: 50%;
   }
 }
@@ -1095,6 +1132,12 @@ a {
     left: 35%;
   }
 }
+@media only screen and (min-width: 992px) {
+  .background-shapes .icon2 {
+    bottom: 68%;
+    left: 45%;
+  }
+}
 .background-shapes .icon3 {
   color: #2617f5;
   top: 25%;
@@ -1106,11 +1149,23 @@ a {
     right: 80%;
   }
 }
+@media only screen and (min-width: 992px) {
+  .background-shapes .icon3 {
+    top: 15%;
+    right: 80%;
+  }
+}
 .background-shapes .icon4 {
   color: #fd7b3f;
   top: 50%;
   right: 10%;
   animation: box-shape linear 5s infinite;
+}
+@media only screen and (min-width: 992px) {
+  .background-shapes .icon4 {
+    top: 45%;
+    right: 5%;
+  }
 }
 .background-shapes .icon5 {
   color: #3cf517;
@@ -1124,6 +1179,12 @@ a {
     left: 75%;
   }
 }
+@media only screen and (min-width: 992px) {
+  .background-shapes .icon5 {
+    top: 15%;
+    left: 80%;
+  }
+}
 .background-shapes .box1 {
   border: 3px solid #fd3f3f;
   top: 20%;
@@ -1132,12 +1193,18 @@ a {
 @media only screen and (min-width: 576px) {
   .background-shapes .box1 {
     left: 5%;
+    top: 18%;
   }
 }
 .background-shapes .box2 {
   border: 3px solid #3f43fd;
   top: 90%;
   left: 60%;
+}
+@media only screen and (min-width: 992px) {
+  .background-shapes .box2 {
+    top: 20%;
+  }
 }
 .background-shapes .box3 {
   border: 3px solid #fd3fed;
@@ -1148,6 +1215,11 @@ a {
   border: 3px solid #5ffd3f;
   top: 70%;
   left: 15%;
+}
+@media only screen and (min-width: 992px) {
+  .background-shapes .box4 {
+    top: 60%;
+  }
 }
 .background-shapes .box5 {
   border: 3px solid #fd7b3f;
@@ -1160,20 +1232,45 @@ a {
     left: 50%;
   }
 }
+@media only screen and (min-width: 992px) {
+  .background-shapes .box5 {
+    top: 50%;
+  }
+}
 .background-shapes .dot1 {
   background: #7717f5;
   top: 80%;
   left: 35%;
+}
+@media only screen and (min-width: 992px) {
+  .background-shapes .dot1 {
+    top: 60%;
+  }
 }
 .background-shapes .dot2 {
   background: #3cf517;
   top: 70%;
   left: 85%;
 }
+@media only screen and (min-width: 992px) {
+  .background-shapes .dot2 {
+    top: 60%;
+  }
+}
 .background-shapes .dot3 {
   background: #2617f5;
   top: 25%;
   left: 39%;
+}
+@media only screen and (min-width: 576px) {
+  .background-shapes .dot3 {
+    top: 28%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .background-shapes .dot3 {
+    top: 18%;
+  }
 }
 .background-shapes .dot4 {
   background: #f51717;
@@ -1184,6 +1281,12 @@ a {
   .background-shapes .dot4 {
     top: 50%;
     left: 10%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .background-shapes .dot4 {
+    top: 40%;
+    left: 5%;
   }
 }
 
@@ -1244,13 +1347,19 @@ footer .legal p {
 @media only screen and (max-width: 576px) {
   .hero-area {
     flex-direction: column;
-    padding: 4rem 2rem;
+    padding: 3rem 2rem;
   }
 }
 @media only screen and (min-width: 576px) {
   .hero-area {
     flex-direction: column;
-    padding: 5rem 2rem;
+    padding: 3rem 2rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .hero-area {
+    flex-direction: row;
+    padding: 8rem 6rem;
   }
 }
 .hero-area img {
@@ -1258,6 +1367,11 @@ footer .legal p {
 }
 .hero-area--contents {
   max-width: 34rem;
+}
+@media only screen and (min-width: 992px) {
+  .hero-area--contents {
+    max-width: 28rem;
+  }
 }
 .hero-area--title {
   font-size: 3rem;
@@ -1279,6 +1393,14 @@ footer .legal p {
     font-size: 1.2rem;
   }
 }
+@media only screen and (min-width: 992px) {
+  .hero-area--title {
+    font-size: 2.2rem;
+  }
+  .hero-area--title span {
+    font-size: 1.9rem;
+  }
+}
 .hero-area--desc {
   text-transform: capitalize;
   margin-top: 2rem;
@@ -1294,6 +1416,11 @@ footer .legal p {
 @media only screen and (min-width: 576px) {
   .hero-area--desc {
     font-size: 0.9rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .hero-area--desc {
+    font-size: 1rem;
   }
 }
 
@@ -1318,6 +1445,14 @@ footer .legal p {
     margin-top: 0;
   }
 }
+@media only screen and (min-width: 992px) {
+  .about-area {
+    flex-direction: row;
+    padding: 8rem 6rem;
+    align-items: center;
+    margin-top: 0;
+  }
+}
 .about-area h2 {
   font-size: 3rem;
 }
@@ -1337,6 +1472,12 @@ footer .legal p {
 @media only screen and (min-width: 576px) {
   .about-area--img {
     width: 25rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .about-area--img {
+    width: 100rem;
+    padding-right: 3rem;
   }
 }
 .about-area--content {
@@ -1382,6 +1523,11 @@ footer .legal p {
     padding: 4rem 2rem;
   }
 }
+@media only screen and (min-width: 992px) {
+  .roadmap {
+    padding: 8rem 4rem;
+  }
+}
 .roadmap--heading {
   text-align: center;
 }
@@ -1408,6 +1554,11 @@ footer .legal p {
     flex-direction: column;
   }
 }
+@media only screen and (min-width: 992px) {
+  .roadmap--items {
+    flex-direction: row;
+  }
+}
 .roadmap--item {
   position: relative;
   padding: 3rem 1rem;
@@ -1417,11 +1568,21 @@ footer .legal p {
   filter: grayscale(100%);
   transition: 500ms;
 }
+@media only screen and (min-width: 992px) {
+  .roadmap--item {
+    max-width: 600px;
+  }
+}
 .roadmap--item:hover .roadmap--item__img::after {
   animation: rotate-infinite 5000ms linear infinite;
 }
 .roadmap--item:hover {
   filter: grayscale(0);
+}
+@media only screen and (min-width: 992px) {
+  .roadmap--item {
+    flex: 1;
+  }
 }
 .roadmap--item__img {
   position: relative;
@@ -1483,6 +1644,14 @@ footer .legal p {
     left: 39%;
   }
 }
+@media only screen and (min-width: 992px) {
+  .roadmap--item:not(:last-child)::before {
+    content: "\f054";
+    top: 25%;
+    left: auto;
+    right: 0px;
+  }
+}
 .roadmap--item:hover:not(:last-child)::before {
   right: -10%;
   transition: 500ms;
@@ -1513,6 +1682,15 @@ footer .legal p {
     left: 0;
   }
 }
+@media only screen and (min-width: 992px) {
+  .roadmap--item:hover:last-child:after {
+    top: 25%;
+    right: auto;
+    left: 70%;
+    font-size: 2.5rem;
+    width: 120px;
+  }
+}
 
 .courses {
   padding: 8rem 20rem;
@@ -1526,6 +1704,11 @@ footer .legal p {
 @media only screen and (min-width: 576px) {
   .courses {
     padding: 4rem 2rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .courses {
+    padding: 8rem 4rem;
   }
 }
 .courses--heading {
@@ -1565,6 +1748,7 @@ footer .legal p {
 }
 @media only screen and (max-width: 576px) {
   .courses-cards {
+    align-items: center;
     flex-direction: column;
   }
 }
@@ -1574,12 +1758,23 @@ footer .legal p {
     align-items: center;
   }
 }
+@media only screen and (min-width: 992px) {
+  .courses-cards {
+    flex-direction: row;
+    align-items: stretch;
+  }
+}
 .courses-card {
   background: #fff;
   max-width: 380px;
   border-radius: 10px;
   overflow: hidden;
   cursor: pointer;
+}
+@media only screen and (min-width: 992px) {
+  .courses-card {
+    max-width: 275px;
+  }
 }
 .courses-card:hover {
   transition: 500ms;
@@ -1589,8 +1784,13 @@ footer .legal p {
 .courses-card img {
   width: 380px;
 }
+@media only screen and (min-width: 992px) {
+  .courses-card img {
+    max-width: 275px;
+  }
+}
 .courses-card__body {
-  padding: 2rem;
+  padding: 1.5rem;
   text-align: center;
 }
 .courses-card__body h4 {
@@ -1599,6 +1799,11 @@ footer .legal p {
 @media only screen and (max-width: 576px) {
   .courses-card__body h4 {
     font-size: 1.3rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .courses-card__body h4 {
+    font-size: 1.2rem;
   }
 }
 .courses-card__body p {
@@ -1628,6 +1833,16 @@ footer .legal p {
     width: 28rem;
   }
 }
+@media only screen and (min-width: 576px) and (min-width: 992px) {
+  .contact img {
+    width: 25rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .contact {
+    padding: 8rem 6rem;
+  }
+}
 .contact-card {
   background: #fff;
   display: flex;
@@ -1650,11 +1865,21 @@ footer .legal p {
     align-items: initial;
   }
 }
+@media only screen and (min-width: 992px) {
+  .contact-card {
+    flex-direction: row;
+  }
+}
 .contact-card--contents {
   flex-grow: 1;
 }
 .contact-card--contents h2 {
   font-size: 1.2rem;
+}
+@media only screen and (min-width: 992px) {
+  .contact-card--contents h2 {
+    font-size: 1.5rem;
+  }
 }
 .contact-card--contents p {
   color: gray;

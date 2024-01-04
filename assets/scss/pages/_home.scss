@@ -8,21 +8,29 @@
 
   @include mixins.responsive(xs) {
     flex-direction: column;
-    padding: 4rem 2rem;
+    padding: 3rem 2rem;
   }
 
   @include mixins.responsive(sm) {
     flex-direction: column;
-    padding: 5rem 2rem;
+    padding: 3rem 2rem;
   }
 
-  img{
+  @include mixins.responsive(lg) {
+    flex-direction: row;
+    padding: 8rem 6rem;
+  }
+
+  img {
     width: 25rem;
   }
 
-
   &--contents {
     max-width: 34rem;
+
+    @include mixins.responsive(lg) {
+      max-width: 28rem;
+    }
   }
 
   &--title {
@@ -32,16 +40,25 @@
     @include mixins.responsive(xs) {
       font-size: 2rem;
 
-      span{
+      span {
         font-size: 1.3rem;
       }
     }
 
+
     @include mixins.responsive(sm) {
       font-size: 1.8rem;
 
-      span{
+      span {
         font-size: 1.2rem;
+      }
+    }
+
+    @include mixins.responsive(lg) {
+      font-size: 2.2rem;
+
+      span {
+        font-size: 1.9rem;
       }
     }
   }
@@ -53,10 +70,13 @@
     color: gray;
 
     @include mixins.responsive(xs) {
-      font-size: .9rem;
+      font-size: 0.9rem;
     }
     @include mixins.responsive(sm) {
-      font-size: .9rem;
+      font-size: 0.9rem;
+    }
+    @include mixins.responsive(lg) {
+      font-size: 1rem;
     }
   }
 }

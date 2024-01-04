@@ -16,6 +16,12 @@
   @include mixins.responsive(sm) {
     padding: 1rem 2rem;
   }
+  @include mixins.responsive(md) {
+    padding: 1rem 2rem;
+  }
+  @include mixins.responsive(lg) {
+    padding: 1rem 4rem;
+  }
 
   h2 span {
     color: #4d4d4d;
@@ -35,6 +41,14 @@
       font-size: 1.4rem;
       display: block;
     }
+    @include mixins.responsive(md) {
+      font-size: 1.4rem;
+      display: block;
+    }
+    @include mixins.responsive(lg) {
+      font-size: 1.4rem;
+      display: none;
+    }
   }
 
   &--menu {
@@ -50,6 +64,12 @@
     @include mixins.responsive(sm) {
       display: none;
     }
+    @include mixins.responsive(md) {
+      display: none;
+    }
+    @include mixins.responsive(lg) {
+      display: flex;
+    }
 
     &__item a {
       margin-right: 5rem;
@@ -57,6 +77,10 @@
       font-weight: 600;
       color: #242424;
       transition: 300ms;
+
+      @include mixins.responsive(lg) {
+        margin-right: 3rem;
+      }
 
       &:hover {
         color: fun.theme-color("primary-hover");
