@@ -11,6 +11,16 @@
     padding: 4rem 2rem;
   }
 
+  @include mixins.responsive(sm) {
+    flex-direction: column;
+    padding: 5rem 2rem;
+  }
+
+  img{
+    width: 25rem;
+  }
+
+
   &--contents {
     max-width: 34rem;
   }
@@ -26,6 +36,14 @@
         font-size: 1.3rem;
       }
     }
+
+    @include mixins.responsive(sm) {
+      font-size: 1.8rem;
+
+      span{
+        font-size: 1.2rem;
+      }
+    }
   }
   &--desc {
     text-transform: capitalize;
@@ -35,6 +53,9 @@
     color: gray;
 
     @include mixins.responsive(xs) {
+      font-size: .9rem;
+    }
+    @include mixins.responsive(sm) {
       font-size: .9rem;
     }
   }

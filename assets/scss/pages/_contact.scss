@@ -9,6 +9,14 @@
     padding: 4rem 2rem;
   }
 
+  @include mixins.responsive(sm) {
+    padding: 4rem 2rem;
+
+    img{
+      width: 28rem;
+    }
+  }
+
   &-card {
     background: #fff;
     display: flex;
@@ -19,9 +27,14 @@
 
     @include mixins.responsive(xs) {
       flex-direction: column;
-    padding: 2rem;
-    align-items: initial;
+      padding: 2rem;
+      align-items: initial;
+    }
 
+    @include mixins.responsive(sm) {
+      flex-direction: column;
+      padding: 2rem;
+      align-items: initial;
     }
 
     &--contents {
