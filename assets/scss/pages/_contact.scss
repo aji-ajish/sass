@@ -1,8 +1,13 @@
 @use "../abstract/function" as fun;
+@use "../abstract/mixins" as mixins;
 
 .contact {
   padding: 8rem 20rem;
   background: rgb(216, 216, 216);
+
+  @include mixins.responsive(xs) {
+    padding: 4rem 2rem;
+  }
 
   &-card {
     background: #fff;
@@ -11,6 +16,13 @@
     align-items: center;
     padding: 2rem 3rem;
     border-radius: 6px;
+
+    @include mixins.responsive(xs) {
+      flex-direction: column;
+    padding: 2rem;
+    align-items: initial;
+
+    }
 
     &--contents {
       flex-grow: 1;

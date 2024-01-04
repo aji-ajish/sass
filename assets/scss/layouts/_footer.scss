@@ -1,10 +1,19 @@
 @use "../abstract/function" as fun;
+@use "../abstract/mixins" as mixins;
+
 
 footer {
   padding: 2rem 0;
   text-align: center;
   color: #fff;
-  background-color: fun.theme-color();
+  background-color: rgb(51, 51, 51);
+
+  &>div h2 span{
+    @include mixins.responsive(xs) {
+     font-weight: 400;
+     font-size: 1.3rem;
+    }
+  }
 
   p {
     color: #e8e8e8;
@@ -18,11 +27,11 @@ footer {
   }
   .social-icon a:nth-child(1) i:hover {
     transition: 300ms;
-    color: rgb(35, 255, 53);
+    color: rgb(35, 86, 255);
   }
   .social-icon a:nth-child(2) i:hover {
     transition: 300ms;
-    color: rgb(75, 75, 75);
+    color: rgb(128, 128, 128);
   }
   .social-icon a:nth-child(3) i:hover {
     transition: 300ms;

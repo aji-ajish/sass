@@ -1,26 +1,35 @@
 @use "../abstract/function" as fun;
+@use "../abstract/mixins" as mixins;
 
 .roadmap {
   padding: 8rem 20rem;
   background: #8080800a;
 
+  @include mixins.responsive(xs) {
+    padding: 4rem 2rem;
+  }
+
   &--heading {
     text-align: center;
 
-    h2{
-        font-size: 2rem;
+    h2 {
+      font-size: 2rem;
     }
-    p{
-        color: gray;
+    p {
+      color: gray;
     }
-
   }
 
   &--items {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-top: 3rem;
     text-transform: capitalize;
+
+    @include mixins.responsive(xs) {
+      flex-direction: column;
+    }
   }
 
   &--item {
@@ -33,7 +42,7 @@
     transition: 500ms;
 
     &:hover &__img::after {
-      animation: rotate-infinite 4000ms linear infinite;
+      animation: rotate-infinite 5000ms linear infinite;
     }
     &:hover {
       filter: grayscale(0);
@@ -68,9 +77,7 @@
       h5 {
         font-size: 1.5rem;
         font-weight: 600;
-        
       }
-
 
       p {
         color: gray;
@@ -92,6 +99,12 @@
       line-height: 1;
       z-index: 1;
       transition: 500ms;
+
+      @include mixins.responsive(xs) {
+        content: "\f078";
+        top: 90%;
+        left: 39%;
+      }
     }
 
     &:hover:not(:last-child)::before {
@@ -100,8 +113,8 @@
       color: fun.theme-color();
     }
 
-    &:hover h5{
-        color:fun.theme-color();
+    &:hover h5 {
+      color: fun.theme-color();
       transition: 500ms;
     }
 
@@ -113,6 +126,11 @@
       right: -25px;
       font-size: 3rem;
       transition: 500ms;
+
+      @include mixins.responsive(xs) {
+        top: 90%;
+        left: 0;
+      }
     }
   }
 }
