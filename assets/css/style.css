@@ -1754,7 +1754,12 @@ footer .legal p {
 }
 @media only screen and (min-width: 992px) {
   .courses {
-    padding: 8rem 10rem;
+    padding: 8rem 5rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .courses {
+    padding: 8rem 8rem;
   }
 }
 .courses--heading {
