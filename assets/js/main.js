@@ -7,8 +7,23 @@ navToggler.addEventListener('click', () => {
     // show menu programmatically
     headerMenu.classList.toggle("show")
 
-    navIcon.forEach(icon=>{
+    navIcon.forEach(icon => {
         icon.classList.toggle("hidden")
     })
 
 })
+
+function navbarFixed() {
+    const header_dom = document.querySelector('.header')
+    const nav_offset_top = header_dom.clientHeight + 50;
+
+    window.addEventListener('scroll', () => {
+        let scroll = window.scrollY || document.documentElement.scrollTop
+        if (scroll >= nav_offset_top) {
+            header_dom.classList.add('navbar-fixed')
+        }else{
+            header_dom.classList.remove('navbar-fixed')
+        }
+    })
+}
+navbarFixed()
