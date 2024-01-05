@@ -29,27 +29,28 @@
       </div>
       <div>
         <div class="nav-toggler">
-          <i class="fa fa-bars"></i>
+          <i class="navIcon fa fa-bars"></i>
+          <i class="navIcon fa fa-times hidden"></i>
         </div>
         <ul class="header--menu">
           <li class="header--menu__item">
-            <a href="#" class="active">Home</a>
+            <a href="#home" class="active">Home</a>
           </li>
 
           <li class="header--menu__item">
-            <a href="#">About</a>
+            <a href="#about">About</a>
           </li>
 
           <li class="header--menu__item">
-            <a href="#">Roadmap</a>
+            <a href="#roadmap">Roadmap</a>
           </li>
 
           <li class="header--menu__item">
-            <a href="#">Courses</a>
+            <a href="#courses">Courses</a>
           </li>
 
           <li>
-            <a href="#" class="btn-primary">Contact Us</a>
+            <a href="#contactus" class="btn-primary">Contact Us</a>
           </li>
         </ul>
       </div>
@@ -59,7 +60,7 @@
     <!-- ========== Start Main Content ========== -->
     <main>
       <!-- ========== Start hero ========== -->
-      <section class="hero-area">
+      <section class="hero-area" id="home">
         <div class="background-shapes">
           <div class="box1"></div>
           <div class="box2"></div>
@@ -109,14 +110,15 @@
         <div>
           <img
             src="./assets/img/web-design-illustration.png"
-            alt="web-design-illustration" class="img-responsive"
+            alt="web-design-illustration"
+            class="img-responsive"
           />
         </div>
       </section>
       <!-- ========== End hero ========== -->
 
       <!-- ========== Start About ========== -->
-      <section class="about-area space-y-5">
+      <section class="about-area space-y-5" id="about">
         <div>
           <img
             src="./assets/img/web-development-illustration.png"
@@ -137,13 +139,13 @@
       <!-- ========== End About ========== -->
 
       <!-- ========== Start Road map ========== -->
-      <section class="roadmap">
+      <section class="roadmap" id="roadmap">
         <div class="roadmap--heading space-y-1">
           <h2>Roadmap to Expertise</h2>
           <p>start it slow, finish it with style</p>
           <div class="line"></div>
         </div>
-        <div class="roadmap--items ">
+        <div class="roadmap--items">
           <div class="roadmap--item">
             <div class="roadmap--item__img">
               <img
@@ -182,7 +184,7 @@
       <!-- ========== End Road map ========== -->
 
       <!-- ========== Start courses ========== -->
-      <section class="courses">
+      <section class="courses" id="courses">
         <div class="courses--heading mb-5 space-y-1">
           <h2>Free Courses to Enroll</h2>
           <p>Start from beginning, no pre-requisite required</p>
@@ -192,7 +194,8 @@
             <div>
               <img
                 src="./assets/img/courses/learn-html-essentials-in-tamil.jpg"
-                alt="learn-html-essentials-in-tamil" class="img-responsive"
+                alt="learn-html-essentials-in-tamil"
+                class="img-responsive"
               />
             </div>
             <div class="courses-card__body space-y-1">
@@ -208,7 +211,8 @@
             <div>
               <img
                 src="./assets/img/courses/learn-css3-in-tamil.jpg"
-                alt="learn-html-essentials-in-tamil" class="img-responsive"
+                alt="learn-html-essentials-in-tamil"
+                class="img-responsive"
               />
             </div>
             <div class="courses-card__body space-y-1">
@@ -224,7 +228,8 @@
             <div>
               <img
                 src="./assets/img/courses/learn-javascript-in-tamil.jpg"
-                alt="learn-html-essentials-in-tamil" class="img-responsive"
+                alt="learn-html-essentials-in-tamil"
+                class="img-responsive"
               />
             </div>
             <div class="courses-card__body space-y-1">
@@ -244,7 +249,7 @@
       <!-- ========== End courses ========== -->
 
       <!-- ========== Start contact ========== -->
-      <section class="contact">
+      <section class="contact" id="contactus">
         <div class="contact-card">
           <form
             accept="#"
@@ -296,7 +301,8 @@
           <div>
             <img
               src="./assets/img/cyberdude-contact.png"
-              alt="cyberdude-contact" class="img-responsive"
+              alt="cyberdude-contact"
+              class="img-responsive"
             />
           </div>
         </div>
@@ -326,5 +332,8 @@
     <!-- ========== Start Footer ========== -->
     <footer></footer>
     <!-- ========== End Footer ========== -->
+
+    <!--script-->
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>

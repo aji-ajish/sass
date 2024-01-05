@@ -5,6 +5,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -35,6 +36,10 @@ a {
 .img-responsive {
   max-width: 100%;
   height: auto;
+}
+
+.hidden {
+  display: none;
 }
 
 @keyframes color-change {
@@ -1009,6 +1014,11 @@ a {
     font-size: 1.5rem;
   }
 }
+@media only screen and (min-width: 1400px) {
+  .header {
+    padding: 1rem 20rem;
+  }
+}
 .header h2 span {
   color: #4d4d4d;
 }
@@ -1053,6 +1063,26 @@ a {
 @media only screen and (max-width: 576px) {
   .header--menu {
     display: none;
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(255, 161, 161);
+    z-index: 1;
+    transition: 500ms;
+  }
+  .header--menu.show {
+    display: block;
+    top: 68px;
+    text-align: center;
+  }
+  .header--menu li {
+    padding: 2rem;
+  }
+  .header--menu li a {
+    color: #fff;
+    margin: 0;
   }
 }
 @media only screen and (min-width: 576px) {
@@ -1377,7 +1407,8 @@ footer .legal p {
 }
 @media only screen and (min-width: 1200px) {
   .hero-area {
-    padding: 8rem 15rem;
+    padding: 8rem 1rem;
+    margin-right: 20rem;
   }
 }
 .hero-area img {
@@ -1494,6 +1525,14 @@ footer .legal p {
     margin-top: 0;
   }
 }
+@media only screen and (min-width: 1200px) {
+  .about-area {
+    flex-direction: row;
+    padding: 8rem 15rem;
+    align-items: center;
+    margin-top: 0;
+  }
+}
 .about-area h2 {
   font-size: 3rem;
 }
@@ -1505,6 +1544,11 @@ footer .legal p {
 @media only screen and (min-width: 576px) {
   .about-area h2 {
     font-size: 2rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .about-area h2 {
+    font-size: 3rem;
   }
 }
 .about-area--img {
@@ -1547,6 +1591,11 @@ footer .legal p {
 @media only screen and (min-width: 576px) {
   .about-area p {
     font-size: 0.9rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .about-area p {
+    font-size: 1rem;
   }
 }
 
@@ -1759,7 +1808,7 @@ footer .legal p {
 }
 @media only screen and (min-width: 1200px) {
   .courses {
-    padding: 8rem 8rem;
+    padding: 8rem 20rem;
   }
 }
 .courses--heading {

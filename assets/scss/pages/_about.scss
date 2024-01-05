@@ -27,6 +27,13 @@
     margin-top: 0;
   }
 
+  @include mixins.responsive(xlg) {
+    flex-direction: row;
+    padding: 8rem 15rem;
+    align-items: center;
+    margin-top: 0;
+  }
+
   h2 {
     font-size: 3rem;
 
@@ -36,6 +43,10 @@
 
     @include mixins.responsive(sm) {
       font-size: 2rem;
+    }
+
+    @include mixins.responsive(lg) {
+      font-size: 3rem;
     }
   }
 
@@ -75,6 +86,9 @@
 
     @include mixins.responsive(sm) {
       font-size: 0.9rem;
+    }
+    @include mixins.responsive(lg) {
+      font-size: 1rem;
     }
   }
 }

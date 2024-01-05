@@ -22,8 +22,11 @@
   }
 
   @include mixins.responsive(xlg) {
-    padding: 8rem 15rem;
+    padding: 8rem 1rem;
+    margin-right: 20rem;
   }
+
+
 
   img {
     width: 25rem;

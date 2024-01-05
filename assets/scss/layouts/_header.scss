@@ -26,9 +26,13 @@
   @include mixins.responsive(xlg) {
     padding: 1rem 15rem;
 
-    h2{
+    h2 {
       font-size: 1.5rem;
     }
+  }
+
+  @include mixins.responsive(xxlg) {
+    padding: 1rem 20rem;
   }
 
   h2 span {
@@ -67,6 +71,34 @@
 
     @include mixins.responsive(xs) {
       display: none;
+
+      position: fixed;
+      top: -100%;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: fun.theme-color("menu-bg");
+      z-index: 1;
+      transition: 500ms;
+
+      &.show {
+        display: block;
+        top: 68px;
+        text-align: center;
+        
+      }
+
+      & li {
+        padding: 2rem;
+
+        a{
+          color: #fff;
+          margin: 0;
+
+          &.active{
+          }
+        }
+      }
     }
 
     @include mixins.responsive(sm) {
