@@ -1,6 +1,10 @@
 const navToggler = document.querySelector(".nav-toggler")
 
 navToggler.addEventListener('click', () => {
+    menuClick()
+})
+
+function menuClick() {
     const headerMenu = document.querySelector("ul.header--menu")
     const navIcon = document.querySelectorAll('.navIcon')
 
@@ -10,8 +14,7 @@ navToggler.addEventListener('click', () => {
     navIcon.forEach(icon => {
         icon.classList.toggle("hidden")
     })
-
-})
+}
 
 function navbarFixed() {
     const header_dom = document.querySelector('.header')
@@ -46,12 +49,23 @@ function setMenuActive() {
         navLinks.forEach((li) => {
             if (current == li.getAttribute("href").split("#")[1]) {
                 li.classList.add('active')
-            }else{
+            } else {
                 li.classList.remove('active')
             }
         })
     })
 }
 
+function onMenuClick() {
+    const navLinks = document.querySelectorAll('.header--menu>li>a')
+
+    for (let i = 0; i < navLinks.length; i++) {
+        navLinks[i].addEventListener("click", () => {
+            menuClick()
+        })
+    }
+}
+
 navbarFixed()
 setMenuActive()
+onMenuClick()
